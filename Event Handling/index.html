@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Event Handler</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="outer">
+            <h2>Boxes</h2>
+
+            <form id="form">
+                <fieldset>
+                    <label>Blue box sits inside the red box</label>
+                    <button type="button" id="button1">Click</button>
+                </fieldset>
+
+                <fieldset>
+                    <label>Blue box sits under the red box</label>
+                    <button type="button" id="button2">Click</button>
+                </fieldset>
+
+                <fieldset>
+                    <label>Blue box sits to the right of the red box</label>
+                    <button type="button" id="button3">Click</button>
+                </fieldset>
+
+                <fieldset>
+                    <label>Red box sits to the left of the blue box</label>
+                    <button type="button" id="button4">Click</button>
+                </fieldset>
+
+                <fieldset>
+                    <label>Blue box sits inside the red box and move the blue box 20px down and 45px to the right of the top left hand corner of the red box</label>
+                    <button type="button" id="button5">Click</button>
+                </fieldset>
+
+                <fieldset>
+                    <label>Green box around both the blue and red boxes</label>
+                    <button type="button" id="button6">Click</button>
+                </fieldset>
+            </form>
+
+            <div id="boxes">
+                <div id="green" class="hidden">
+                    <div id="red">
+                        <div id="blueIn" class="hidden"></div>
+                    </div>
+                    <div id="blueBottom" class="hidden"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>
