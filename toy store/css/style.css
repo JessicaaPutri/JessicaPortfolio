@@ -1,0 +1,200 @@
+*{
+    font-family:"Lucida Sans", Verdana, "sans-serif";
+    font-size:16px;
+    color:black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(../img/akatsuki.jpg);
+}
+
+#wrapper{
+    max-width: 1000px;
+    min-height: 200vh;
+    margin: 0 auto;
+    background-color:   rgb(188, 76, 76);
+    display: grid;
+    grid-template-areas:
+            "one"
+            "two"
+            "three"
+            "footer";
+    grid-template-columns:auto;
+    grid-template-rows:150px 50px minmax(1000px, auto) 250px;
+}
+
+header{
+    background-color: #f5f5f5;
+    grid-area: one;
+    display: grid;
+    grid-template-areas: 
+            "logo name";
+    grid-template-columns: 100px auto;
+    grid-template-rows: auto;
+    margin: 10px;
+    
+}
+
+header h1{
+    font-family: "Luckiest Guy", cursive;
+    min-height: 200px;
+    grid-area: name;
+    font-size: 2.5em;
+    color: rgb(156, 21, 21);
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+header img{
+    margin: 5px;
+    padding-left: 20px;
+    align-items: center;
+}
+
+nav{
+    background-color: rgb(101, 18, 18);
+    grid-area: two;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navigation{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 3em;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.navigation li{
+    padding: 10px;
+    margin: 10px;
+    color: white;
+}
+
+.navigation li:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+}
+
+main{
+    background-color: rgb(101, 18, 18);
+    grid-area: three;
+    display: grid;
+    grid-template-areas: 
+            "aside content ";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    margin: 10px;
+}
+
+main article{
+    grid-area: content;
+    background-color: #202020;
+    margin: 10px;
+}
+
+#content p{
+    text-align: left;
+}
+
+article h2{
+    font-family: "Luckiest Guy", cursive;
+    color:#f5f5f5;
+    font-size: 2em;
+    padding-top: 30px;
+    text-align: center;
+}
+
+article p{
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+main aside{
+    grid-area: aside;
+    font-size: 2em;
+    background-color: #202020;
+    margin-right: 5px;
+    margin: 10px;
+}
+
+aside h3{
+    font-family: "Luckiest Guy", cursive;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+aside img{
+    display: block;
+    margin: auto;
+}
+
+aside p{
+    color: white;
+    padding: 20px;
+}
+
+footer{
+    background-color: #f5f5f5;
+    grid-area: footer;
+    display: grid;
+    grid-template-areas: 
+        "footer1 footer2";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    margin: 10px;
+}
+
+#section1{
+    background-color: rgb(101, 18, 18);
+    grid-area: footer1;
+    margin: 10px;
+}
+
+#section1 li {
+    color: white;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#section1 li:hover{
+    text-decoration: underline;
+    color: rgb(220, 95, 95);
+    cursor: pointer;
+} 
+
+#section2{
+    background-color: rgb(101, 18, 18);
+    grid-area: footer2;
+    margin: 10px;
+}
+
+#section2 li {
+    color: white;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+#section2 li:hover{
+    text-decoration: underline;
+    color: rgb(220, 95, 95);
+    cursor: pointer;
+} 
+
