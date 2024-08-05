@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Registration Form</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <script src="https://kit.fontawesome.com/d20f1d4040.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <form action="#" method="post" id="theForm">
+            <fieldset>
+                <legend>Register</legend>
+                <p>All fields are required.</p>
+                <div class="two">
+                    <label for="firstName" id="label">First Name</label>
+                    <span class="tooltip">In the format 2 - 20 letters</span>
+                    <input type="text" name="firstName" id="firstName">
+                    <i id="icon" class="fa-solid fa-check"></i>
+                </div>
+
+                <div class="two">
+                    <label for="lastName" id="label">Last Name</label>
+                    <span class="tooltip">In the format 2 - 20 letters</span>
+                    <input type="text" name="lastName" id="lastName">
+                    <i id="icon1" class="fa-solid fa-check"></i>
+                </div>
+
+			    <div class="two">
+                    <label for="email" id="label">Email Address</label>
+                    <span class="tooltip">In the format 2 - 20 letters</span>
+                    <input type="email" name="email" id="email">
+                    <i id="icon2" class="fa-solid fa-check"></i>
+                </div>
+
+			    <div class="two">
+                    <label for="phone" id="label">Phone Number</label>
+                    <span class="tooltip">In the format XXX XXX XXXX or XXX-XXX-XXXX or XXXXXXXXXX.</span>
+                    <input type="text" name="phone" id="phone">
+                    <i id="icon3" class="fa-solid fa-check"></i>
+                </div>
+
+			    <div class="two">
+                    <label for="city" id="label">City</label>
+                    <span class="tooltip">In the format 2 - 20 letters</span>
+                    <input type="text" name="city" id="city">
+                    <i id="icon4" class="fa-solid fa-check"></i>
+                </div>
+
+                <div class="two">
+                    <label for="state" id="label">State</label>
+                    <select name="state" id="state">
+                        <option value="">Select a State</option> 
+                        <option value="ACT">Australian Capital Territory</option> 
+                        <option value="NSW">New South Wales</option> 
+                        <option value="NT">Northern Territory</option> 
+                        <option value="QLD">Queensland</option> 
+                        <option value="SA">South Australia</option> 
+                        <option value="TAS">Tasmania</option>
+                        <option value="VIC">Victoria</option>
+                        <option value="WA">Western Australia</option>
+                    </select>
+                    <i id="icon5" class="fa-solid fa-check"></i>
+                </div> 
+
+                <div class="two">
+                    <label for="zip" id="label">Post Code</label>
+                    <span class="tooltip">In the format 2 - 20 letters</span>
+                    <input type="text" name="zip" id="zip">
+                    <i id="icon6" class="fa-solid fa-check"></i>
+                </div>
+
+			    <div class="one">
+                    <input type="checkbox" name="terms" id="terms" required> I agree to the terms, whatever they are.
+                </div>
+
+			    <div class="one">
+                    <input type="submit" value="Register" id="submit">
+                </div>
+            </fieldset>
+        </form>
+     
+        <script src="js/utilities.js"></script>
+        <script src="js/errorMessages.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
